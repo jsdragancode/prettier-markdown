@@ -1,0 +1,50 @@
+{
+  "name": "prettier-markdown",
+  "version": "0.1.6",
+  "description": "Prettier JavaScript code in markdown.",
+  "main": "lib/prettier-markdown.js",
+  "bin": {
+    "prettier-markdown": "./bin/cli.js",
+    "pmd": "./bin/cli.js"
+  },
+  "scripts": {
+    "test": "nyc --reporter=html --reporter=text mocha",
+    "codecov": "nyc report --reporter=lcov > coverage.lcov && codecov",
+    "lint": "eslint ./lib ./bin ./test/*.js"
+  },
+  "keywords": [
+    "prettier",
+    "markdown",
+    "formater"
+  ],
+  "author": "noyobo <noyobo@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "debug": "^2.6.3",
+    "minimist": "^1.2.0",
+    "prettier": "^1.2.2",
+    "ramda": "^0.23.0",
+    "write": "^0.3.3"
+  },
+  "devDependencies": {
+    "codecov": "^2.1.0",
+    "eslint": "^3.18.0",
+    "eslint-config-airbnb-base": "^11.1.2",
+    "eslint-plugin-import": "^2.2.0",
+    "mocha": "^3.2.0",
+    "nyc": "^10.2.0",
+    "rimraf": "^2.6.1"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noyobo/prettier-markdown.git"
+  },
+  "bugs": {
+    "url": "https://github.com/noyobo/prettier-markdown/issues"
+  },
+  "homepage": "https://github.com/noyobo/prettier-markdown#readme"
+}
